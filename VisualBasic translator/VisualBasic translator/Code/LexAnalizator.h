@@ -10,8 +10,8 @@
 
 @interface LexAnalizator : NSObject
 {
-    NSInteger currentPosition;
-    NSInteger currentLexema;
+    NSInteger parsingPosition;
+    NSInteger numberInClass;
     NSString *lexema;
     NSDictionary *zarzervSlovaDictionary;
     NSDictionary *razdeliteliDictionary;
