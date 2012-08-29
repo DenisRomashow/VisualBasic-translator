@@ -15,7 +15,7 @@
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self=[super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        lexAnalizator = [[LexAnalizator alloc] initWithString:@"Module Module1 Sub Main() Dim num As Integer"];
+        lexAnalizator = [[LexAnalizator alloc] initWithString:@"Module Module1 Sub Main ( ) Dim num As Integer"];
     }
     return self;
 }

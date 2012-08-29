@@ -12,7 +12,9 @@
 {
     NSInteger parsingPosition;
     NSInteger numberInClass;
-    NSString *lexema;
+    NSString *inputString;
+    NSInteger lexFirstIndex, lexLastIndex;
+    
     NSDictionary *zarzervSlovaDictionary;
     NSDictionary *razdeliteliDictionary;
     NSDictionary *operatoriDictionary;
