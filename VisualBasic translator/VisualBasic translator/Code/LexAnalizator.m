@@ -52,14 +52,13 @@
     
     for (; parsingPosition <[inputString length] && access; parsingPosition++) {
             cstring2[0] = cstring[parsingPosition];
-        if (cstring2[0] == ' ' || cstring2[0] == ':'|| cstring2[0] == '('|| cstring2[0] == ')') {
+        if (cstring2[0] == ' ' || cstring2[0] == ':' || cstring2[0] == '('|| cstring2[0] == ')') {
             access=NO;
             lexLastIndex = parsingPosition;
             parsingResult = [inputString substringWithRange:NSMakeRange(lexFirstIndex,lexLastIndex - lexFirstIndex)];
             NSLog(@" 1stIndex: %d, 2ndIndex: %d, current Position: %d",lexFirstIndex,lexLastIndex,parsingPosition);
             parsingPosition++;
             lexFirstIndex = parsingPosition;
-
         }
     }
     

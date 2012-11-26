@@ -9,5 +9,11 @@
 #import "TableLL1.h"
 
 @implementation TableLL1
+-(id)initWithPathToTableFile:(NSString *)pathToFile {
+    self = [super init];
+    if (self) {
 
+    }
+    return self;
+}
 @end

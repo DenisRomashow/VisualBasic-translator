@@ -15,15 +15,25 @@
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self=[super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        lexAnalizator = [[LexAnalizator alloc] initWithString:@"Module Module1 Sub Main ( ) Dim num As Integer"];
+        firstLoad = YES;
     }
     return self;
 }
-
+-(BOOL)loadCodeEditor {
+    lexAnalizator = [[LexAnalizator alloc] initWithString:[codeEditorTextView text]];
+    return NO;
+}
 -(IBAction)runner:(id)sender {
-    NSInteger idLexemi;
-    idLexemi =    [lexAnalizator nextLexema];
-    NSLog(@"%i",idLexemi);
+    if (!firstLoad) {
+        NSInteger idLexemi;
+        idLexemi = [lexAnalizator nextLexema];
+        codeGeneratorTextView.text = [[NSNumber numberWithInteger:idLexemi] stringValue];
+        
+    }
+    else {
+        firstLoad = [self loadCodeEditor];
+    }
+    
 }
 - (void)viewDidLoad
 {

@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LL1TableRow : NSObject
+@interface LL1TableRow : NSObject {
+    NSArray *terminls;
+    NSInteger jumpTo;
+    BOOL needTake;
+    BOOL needPush;
+    BOOL needPop;
+    BOOL isError;
+}
 
 @end

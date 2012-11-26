@@ -11,6 +11,10 @@
 @interface ViewController : UIViewController
 {
     LexAnalizator *lexAnalizator;
+    IBOutlet UITextView *codeEditorTextView;
+    IBOutlet UITextView *codeGeneratorTextView;
+    BOOL firstLoad ;
+    
 }
 -(IBAction)runner:(id)sender;
 @end

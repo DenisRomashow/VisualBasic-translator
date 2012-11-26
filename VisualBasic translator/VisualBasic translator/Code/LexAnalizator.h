@@ -22,7 +22,4 @@
 }
 -(id)initWithString:(NSString*)string;
 -(NSInteger)nextLexema;
-
-
-
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B3445E615EE845800D2DE4F /* LL1TableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3445E515EE845800D2DE4F /* LL1TableRow.m */; };
+		6B3445EA15EE846E00D2DE4F /* TableLL1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3445E915EE846E00D2DE4F /* TableLL1.m */; };
 		6B45B4BE15E798DE007E20FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B45B4BD15E798DE007E20FD /* UIKit.framework */; };
 		6B45B4C015E798DE007E20FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B45B4BF15E798DE007E20FD /* Foundation.framework */; };
 		6B45B4C215E798DE007E20FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B45B4C115E798DE007E20FD /* CoreGraphics.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B3445E415EE845800D2DE4F /* LL1TableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LL1TableRow.h; path = Code/LL1TableRow.h; sourceTree = "<group>"; };
+		6B3445E515EE845800D2DE4F /* LL1TableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LL1TableRow.m; path = Code/LL1TableRow.m; sourceTree = "<group>"; };
+		6B3445E815EE846E00D2DE4F /* TableLL1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableLL1.h; sourceTree = "<group>"; };
+		6B3445E915EE846E00D2DE4F /* TableLL1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableLL1.m; sourceTree = "<group>"; };
 		6B45B4B915E798DE007E20FD /* VisualBasic translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VisualBasic translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B45B4BD15E798DE007E20FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6B45B4BF15E798DE007E20FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,6 +172,10 @@
 			children = (
 				6BB2DE4615E7A104009946CE /* LexAnalizator.h */,
 				6BB2DE4715E7A104009946CE /* LexAnalizator.m */,
+				6B3445E415EE845800D2DE4F /* LL1TableRow.h */,
+				6B3445E515EE845800D2DE4F /* LL1TableRow.m */,
+				6B3445E815EE846E00D2DE4F /* TableLL1.h */,
+				6B3445E915EE846E00D2DE4F /* TableLL1.m */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -297,6 +307,8 @@
 				6B45B4CE15E798DF007E20FD /* AppDelegate.m in Sources */,
 				6B45B4D115E798DF007E20FD /* ViewController.m in Sources */,
 				6BB2DE4815E7A104009946CE /* LexAnalizator.m in Sources */,
+				6B3445E615EE845800D2DE4F /* LL1TableRow.m in Sources */,
+				6B3445EA15EE846E00D2DE4F /* TableLL1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualBasic translator/VisualBasic translator-Prefix.pch";
 				INFOPLIST_FILE = "VisualBasic translator/VisualBasic translator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,6 +427,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualBasic translator/VisualBasic translator-Prefix.pch";
 				INFOPLIST_FILE = "VisualBasic translator/VisualBasic translator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
